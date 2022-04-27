@@ -25,7 +25,8 @@ const Container = styled.div`
     height: 48px;
     border-radius: 4px;
     margin-right: 8px;
-    font-size: 16px;f
+    font-size: 16px;
+    transition: .3s;
   }
   .block:last-child {
     margin-right: 0;

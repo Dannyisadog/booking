@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import CustomInputNumber from "./components/CustomInputNumber";
+import RoomAllocation from "./components/RoomAllocation";
 
 const Container = styled.div`
-
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 `;
 
 const Home = () => {
   return (
     <Container>
-      <h1>Home Page</h1>
-      <CustomInputNumber
-        value={0}
-        min={0}
-        step={1}
-        max={20}
+      <RoomAllocation
+        guest={10}
+        room={3}
+        onChange={() => { }}
       />
     </Container>
   );
