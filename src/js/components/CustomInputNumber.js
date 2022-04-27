@@ -166,7 +166,9 @@ const CustomInputNumber = ({
 }
 
 CustomInputNumber.defaultProps = {
-  step: 1
+  step: 1,
+  onChange: () => { },
+  onBlur: () => { },
 }
 
 CustomInputNumber.propTypes = {
@@ -176,8 +178,8 @@ CustomInputNumber.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.number.isRequired,
   disabled: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired,
-  onBlur: PropTypes.func.isRequired
+  onChange: PropTypes.func,
+  onBlur: PropTypes.func
 }
 
 export default CustomInputNumber;
