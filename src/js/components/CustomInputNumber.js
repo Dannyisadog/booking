@@ -35,7 +35,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: ${props => (props.disabled ? "not-allowed" : "pointer")} !important;
+    cursor: ${props => (props.disabled ? "not-allowed !important" : "pointer")};
     border: 1px solid ${props => (props.disabled ? "#ccc" : "rgb(30, 159, 210);")} !important;
     color: ${props => (props.disabled ? "#ccc" : "rgb(30, 159, 210);")} !important;
     font-size: 36px;
