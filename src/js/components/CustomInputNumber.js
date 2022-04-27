@@ -103,9 +103,9 @@ const CustomInputNumber = ({
       default:
         break;
     }
-    if (parseInt(inputRef.current.value) === parseInt(oldValue)) return;
     setMinusDisabled(parseInt(inputRef.current.value) <= min);
     setPlusDisabled(parseInt(inputRef.current.value) >= max);
+    if (parseInt(inputRef.current.value) === parseInt(oldValue)) return;
     setOldValue(parseInt(inputRef.current.value));
     onChange({
       value: inputRef.current.value,
